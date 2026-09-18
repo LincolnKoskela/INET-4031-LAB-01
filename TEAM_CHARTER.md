@@ -22,14 +22,6 @@
 | Sprint 7 | Scrum Master: Mohamed | Sys Admin: Franklin | QA: Abdi | Developer: Lincoln | 
 
 
-Sprint 1: Scrum Master = Abdi, System Admin = Lincoln, QA = Mohamed, Developers = Franklin
-Sprint 2: Scrum Master = Franklin, System Admin = Abdi, QA = Lincoln, Developers = Mohamed
-Sprint 3: Scrum Master = Mohamed, System Admin = Franklin, QA = Abdi, Developers = Lincoln
-Sprint 4: Scrum Master = Lincoln, System Admin = Mohamed, QA = Franklin, Developers = Abdi
-Sprint 5: Scrum Master = Abdi, System Admin = Lincoln, QA = Mohamed, Developers = Franklin
-Sprint 6: Scrum Master = Franklin, System Admin = Abdi, QA = Lincoln, Developers = Mohamed
-Sprint 7: Scrum Master = Mohamed, System Admin = Franklin, QA = Abdi, Developers = Lincoln
-
 ## Communication 
 - iMessage
 - Zoom meetings

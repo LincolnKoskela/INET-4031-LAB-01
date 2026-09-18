@@ -11,6 +11,17 @@
 
 ## Role Rotation
 
+| Sprint | Member | Member | Member | Member | 
+| ------ | ------ | ------ | ------ | ------ | 
+| Sprint 1 | Scrum Master: Adbi | Sys Admin: Lincoln | QA: Mohamed | Developer: Franklin | 
+| Sprint 2 | Scrum Master: Franklin | Sys Admin: Abdi | QA: Lincoln | Developer: Mohamed | 
+| Sprint 3 | Scrum Master: Mohamed | Sys Admin: Franklin | QA: Abdi | Developer: Lincoln | 
+| Sprint 4 | Scrum Master: Lincoln | Sys Admin: Mohamed | QA: Franklin | Developer: Abdi | 
+| Sprint 5 | Scrum Master: Adbi | Sys Admin: Lincoln | QA: Mohamed | Developer: Franklin | 
+| Sprint 6 | Scrum Master: Franklin | Sys Admin: Abdi | QA: Lincoln | Developer: Mohamed | 
+| Sprint 7 | Scrum Master: Mohamed | Sys Admin: Franklin | QA: Abdi | Developer: Lincoln | 
+
+
 Sprint 1: Scrum Master = Abdi, System Admin = Lincoln, QA = Mohamed, Developers = Franklin
 Sprint 2: Scrum Master = Franklin, System Admin = Abdi, QA = Lincoln, Developers = Mohamed
 Sprint 3: Scrum Master = Mohamed, System Admin = Franklin, QA = Abdi, Developers = Lincoln

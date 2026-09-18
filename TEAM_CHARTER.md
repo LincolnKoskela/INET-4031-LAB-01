@@ -2,12 +2,22 @@
 
 ## Team Members
 
-| Name | Email | GitHub Username | Initial Role | 
-| ---- | ----- | --------------- | ------------ |
-| **Abdikarim** | Abdibmoha32@gmail.com | Abdibmoha32-star | Scrum Master | 
+| Name | Email | GitHub Username | Initial Role |
+| ---- | ----- | --------------- | ------------ | 
+| **Abdikarim** | Abdibmoha32@gmail.com | Abdibmoha32-star | Scrum Master |
 | **Mohamed** | mahad083@umn.edu | mahad083 | QA | 
 | **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | Developer | 
 | **Lincoln** | koske113@umn.edu | lincolnkoskela | System Admin | 
+
+# Role Description
+
+| Role | Count | Primary responsibilities |
+| ---- | ----- | ------------------------ |
+| Scrum Master | 1 | Runs sprint ceremonies, owns the sprint board, unblocks teammates |
+| System Admin | 1 | Owns environment configuration, leads infrastructure steps | 
+| QA | 1 | Runs all validation checks, signs off before deliverables are submitted |
+| Developer | 1 | Writes configuration files, sets up tooling, follows lab steps |
+
 
 ## Role Rotation
 
@@ -36,5 +46,11 @@
 2. Pull Request when work is done.
 3. QA will review pull request.
 4. QA will approvve pull request and push to main branch.
+
+## Container Operations
+1. Scrum master is responsible for commiting playbook changes.
+2. Communicate with the Scrum Master and the Team overall.
+3. Consult with the Scrum Master and the Develop.
+4. If something happens overall that is unexcepted, or deems concern, communicate in Team chats for high visibility.
 
 

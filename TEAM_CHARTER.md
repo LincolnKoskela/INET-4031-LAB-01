@@ -26,6 +26,7 @@
 - iMessage
 - Zoom meetings
 - email
+- When something is merged, or breaks, iMessage will be primary means of communication.
 
 ### Response Time Expectations
 - 30 minute response time

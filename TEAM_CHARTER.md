@@ -6,7 +6,7 @@
 | ---- | ----- | --------------- | ------------ |
 | **Abdikarim** | Abdibmoha32@gmail.com | Abdibmoha32-star | Scrum Master | 
 | **Mohamed** | mahad083@umn.edu | mahad083 | QA | 
-| **Franklin** | franklin1jbradley | FranklinBrad | Developer | 
+| **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | Developer | 
 | **Lincoln** | koske113@umn.edu | lincolnkoskela | System Admin | 
 
 ## Role Rotation

@@ -3,7 +3,7 @@
 ## Team Members
 
 | Name | Email | GitHub Username | Initial Role | 
-| ---- | ----- | --------------- |
+| ---- | ----- | --------------- | ------------ |
 | **Abdikarim** | Abdibmoha32@gmail.com | Abdibmoha32-star | Scrum Master | 
 | **Mohamed** | mahad083@umn.edu | mahad083 | QA | 
 | **Franklin** | franklin1jbradley | FranklinBrad | Developer | 

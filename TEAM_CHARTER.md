@@ -9,6 +9,7 @@
 | **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | Developer | 
 | **Lincoln** | koske113@umn.edu | lincolnkoskela | System Admin | 
 
+
 # Role Description
 
 | Role | Count | Primary responsibilities |

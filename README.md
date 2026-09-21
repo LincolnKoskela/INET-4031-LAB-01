@@ -8,6 +8,8 @@
 | **Mohamed** | mahad083@umn.edu | mahad083 | QA | 
 | **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | Developer | 
 | **Lincoln** | koske113@umn.edu | lincolnkoskela | System Admin | 
+| **Kahiye** | kahin012@umn.edu | kahin012-cyber | Developer |
+| **Mahir** | ismai164@umn.edu | -- | Developer |
 
 ## Links
 

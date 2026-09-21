@@ -8,6 +8,8 @@
 | **Mohamed** | mahad083@umn.edu | mahad083 | QA | 
 | **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | Developer | 
 | **Lincoln** | koske113@umn.edu | lincolnkoskela | System Admin | 
+| **Kahiye** | kahin012@umn.edu | kahin012-cyber | Developer |
+| **Mahir** | ismai164@umn.edu | -- | Developer |
 
 
 # Role Description
@@ -24,13 +26,13 @@
 
 | Sprint | Member | Member | Member | Member | 
 | ------ | ------ | ------ | ------ | ------ | 
-| Sprint 1 | Scrum Master: Adbi | Sys Admin: Lincoln | QA: Mohamed | Developer: Franklin | 
-| Sprint 2 | Scrum Master: Franklin | Sys Admin: Abdi | QA: Lincoln | Developer: Mohamed | 
-| Sprint 3 | Scrum Master: Mohamed | Sys Admin: Franklin | QA: Abdi | Developer: Lincoln | 
-| Sprint 4 | Scrum Master: Lincoln | Sys Admin: Mohamed | QA: Franklin | Developer: Abdi | 
-| Sprint 5 | Scrum Master: Adbi | Sys Admin: Lincoln | QA: Mohamed | Developer: Franklin | 
-| Sprint 6 | Scrum Master: Franklin | Sys Admin: Abdi | QA: Lincoln | Developer: Mohamed | 
-| Sprint 7 | Scrum Master: Mohamed | Sys Admin: Franklin | QA: Abdi | Developer: Lincoln | 
+| Sprint 1 | Scrum Master: Adbi | Sys Admin: Lincoln | QA: Mohamed | Developer: Franklin | Developer: Kahiye | Developer: Mahir |
+| Sprint 2 | Scrum Master: Lincoln | Sys Admin: Mohamed | QA: Franklin | Developer: Kahiye | Developer: Mahir | Developer: Adbi |
+| Sprint 3 | Scrum Master: Mohamed | Sys Admin: Franklin | QA: Kahiye | Developer: Mahir | Developer: Abdi | Developer: Lincoln |
+| Sprint 4 | Scrum Master: Franklin | Sys Admin: Kahiye | QA: Mahir | Developer: Abdi | Developer: Lincoln | Developer: Mohamed |
+| Sprint 5 | Scrum Master: Kahiye | Sys Admin: Mahir | QA: Abdi | Developer: Lincoln | Developer: Mohamed | Developer: Franklin |
+| Sprint 6 | Scrum Master: Mahir | Sys Admin: Abdi | QA: Lincoln | Developer: Mohamed | Developer: Franklin | Developer: Kahiye |
+| Sprint 7 | Scrum Master: Abdi | Sys Admin: Lincoln | QA: Mohamed | Developer: Franklin | Developer: Kahiye | Developer: Mahir |
 
 
 ## Communication 

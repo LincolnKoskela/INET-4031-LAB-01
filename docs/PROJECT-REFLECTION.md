@@ -8,3 +8,4 @@
 - Verified baseline state of the container
 - Created ansible/site.yml ansible/inventory and configured Ansible inventory file to target localhost, telling ansible to run task on the same machine where it is invoked.
 - Created initial Ansible playbook (will grow throughout project).
+- Conducted storage checks using `df -h`

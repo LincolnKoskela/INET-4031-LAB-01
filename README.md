@@ -4,10 +4,10 @@
 
 | Name | Email | GitHub Username | Current Role |
 | ---- | ----- | --------------- | ------------ | 
-| **Abdikarim** | Abdibmoha32@gmail.com | Abdibmoha32-star | Scrum Master |
-| **Mohamed** | mahad083@umn.edu | mahad083 | QA | 
-| **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | Developer | 
-| **Lincoln** | koske113@umn.edu | lincolnkoskela | System Admin | 
+| **Abdikarim** | Abdibmoha32@gmail.com | Abdibmoha32-star | Developer |
+| **Mohamed** | mahad083@umn.edu | mahad083 | Sys Admin | 
+| **Franklin** | franklin1jbradley@gmail.com | FranklinBrad | QA | 
+| **Lincoln** | koske113@umn.edu | lincolnkoskela | Lincoln | 
 | **Kahiye** | kahin012@umn.edu | kahin012-cyber | Developer |
 | **Mahir** | ismai164@umn.edu | -- | Developer |
 
@@ -16,9 +16,10 @@
 
 ## Google Docs
 
-| Sprint | Week | Doc |
+| Sprint # | Week | Doc | | Sections | 
 | ------ | ---- | --- |
-| Sprint 1 | Week 1 | [Sprint 1](https://docs.google.com/document/d/18M1M-BXXiRc-_oAEJzN-DMDf3LAYOGaXO1BtKQHledY/edit?tab=t.0) |
-| Sprint 1 | Week 2 | [Sprint 1](https://docs.google.com/document/d/15OqQ9wg6eAtSuQJsSK4ycqgn7YZe2qml4hF9kY_ykks/edit?tab=t.0) |
+| Sprint 1| Week 1 | [Sprint 1](https://docs.google.com/document/d/18M1M-BXXiRc-_oAEJzN-DMDf3LAYOGaXO1BtKQHledY/edit?tab=t.0) | Lab 1 part 1 & 2 |
+| Sprint 1| Week 2 | [Sprint 1](https://docs.google.com/document/d/15OqQ9wg6eAtSuQJsSK4ycqgn7YZe2qml4hF9kY_ykks/edit?tab=t.0) | Lab 1 part 3 && Lab 2 part 1 & 2 | 
+| Sprint 2 | Week 3 | [Sprint 2](https://docs.google.com/document/d/1zbn7Vs36repbvgo8TzE_0WQ4cSWPTJu2vE7PpyH3DAo/edit?tab=t.0) | Lab 2 part 3 |
 
 

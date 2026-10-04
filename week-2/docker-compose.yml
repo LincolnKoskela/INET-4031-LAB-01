@@ -17,7 +17,7 @@ services:
       timeout: 5s
       retries: 5
 
-    flask:
+  flask:
     build:
       context: ./app
       network: host

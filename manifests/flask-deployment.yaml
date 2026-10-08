@@ -21,10 +21,11 @@ spec:
         app: flask
     spec:
       containers:
-        - env:
-            - name: DATABASE_URL
-              value: postgresql://appuser:changeme@db:5432/statustracker
-          image: flask
+        - envFrom:
+          - secretRef:
+              name: flask-credentials
+          image: week-2-flask:latest
+          imagePullPolicy: IfNotPresent
           livenessProbe:
             exec:
               command:

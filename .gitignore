@@ -1,2 +1,5 @@
 week-2/.env
 .env.example
+infrastructure/terraform.tfstate
+infrastructure/terraform.tfstate.backup
+infrastructure/.terraform/

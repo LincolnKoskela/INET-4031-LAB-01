@@ -6,15 +6,15 @@ This file is completed at the end of week 2. Review what your team shipped, what
 
 ## What Went Well
 
-TODO: What did your team do well this sprint? What accomplishment are you proud of?
+We came together as a team to compile the services together. Our application passed all validation checks.
 
 ## What Could Be Better
 
-TODO: What was difficult? What slowed you down? What surprised you?
+We can do better as far as communication, meeting at the same time, or letting the team know that they cannot make it to the planned meeting.
 
 ## What We'll Do Differently Next Sprint
 
-TODO: Based on what you learned, name one specific process change or workflow improvement you will try in Sprint 2.
+Sprint 2 will be more hands on, where everyone participates, plays their roles in better ways. 
 
 ## Team Contributions
 
@@ -22,11 +22,12 @@ Use this section to note which team members led which parts of the work:
 
 | Role | Name | Primary Contribution |
 |---|---|---|
-| Scrum Master | | |
-| System Admin | | |
-| QA | | |
-| Developer 1 | | |
-| Developer 2+ | | |
+| Scrum Master | Lincoln | YES |
+| System Admin | Mohamed | YES |
+| QA | Franklin | YES |
+| Developer 1 | Abdi | YES |
+| Developer 2+ | Kahiye | YES |
+| Developer 3 | Mahir | YES |
 
 ## Notes
 

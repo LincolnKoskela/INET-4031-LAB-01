@@ -3,15 +3,15 @@
 The purpose of this sheet is to truly understand what we did and why we are doing it. 
 This doc will also highlight key terms and tools. 
 
-## Lab 1 — Environment Setup & Team Formation
+## Lab 1 — Environment & Team Setup / Ansible
 
 ### Highlights
 
-- Check the operating system
+**Check the operating system**
 ```
 cat /etc/os-release
 ```
-- Check System Storage
+**Check System Storage**
 ```
 df -h
 ```
@@ -27,7 +27,7 @@ localhost ansible_connection=local
 - Created `ansible/site.yml` and pasted the playbook that automates installing linux packages, 
 ansible, and docker. It starts docker, configs user permissions etc. It preps our envirnmt for future labs.
 
-- **Verify** anisble has the correct `yml` syntax. From root directory run:
+**Verify** anisble has the correct `yml` syntax. From root directory run:
 
 ```
 ansible-playbook -i ansible/inventory ansible/site.yml --syntax-check
@@ -38,6 +38,8 @@ Expected output: **playbook: ansible/site.yml**
 - Ansible playbook: Basically a set of instructions that automatically installs the tools we need and sets up Docker, so we don't have to do everything by hand.
 - Why it's useful: If we ever had to start over with a fresh server, we'd already have the setup instructions saved in GitHub instead of figuring everything out again.
 
+
+Notes from playbook code highlighting idempotency.
 ```
 - name: Ensure Docker is installed
   dnf:
@@ -61,18 +63,18 @@ git push origin main
 
 ### Validation checks
 
-- Connected to a docker container
+**Connected to a docker container**
 ```
 whoami
 hostname
 ```
 
-- Repository Structure Is Correct
+**Repository Structure Is Correct**
 ```
 ls -l
 ```
 
-- Pass all checks
+**Pass all checks**
 ```
 chmod +x ./scripts/check-week1.sh
 ./scripts/check-week1.sh

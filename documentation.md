@@ -16,15 +16,16 @@ cat /etc/os-release
 df -h
 ```
 
-- Created Ansible directory
-- Configured Ansible directory to target localhost instead of ssh'g to another machine in `ansible/inventory`. 
+Created Ansible directory
+
+Configured Ansible directory to target localhost instead of ssh'g to another machine in `ansible/inventory`. 
 Inventory file tells ansible where the automation runs. The playbook tells ansible what the automation should do.
 ```
 [local]
 localhost ansible_connection=local
 ```
 
-- Created `ansible/site.yml` and pasted the playbook that automates installing linux packages, 
+Created `ansible/site.yml` and pasted the playbook that automates installing linux packages, 
 ansible, and docker. It starts docker, configs user permissions etc. It preps our envirnmt for future labs.
 
 **Verify** anisble has the correct `yml` syntax. From root directory run:

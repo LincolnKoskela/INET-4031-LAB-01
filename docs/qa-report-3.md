@@ -2,8 +2,8 @@
 
 QA is responsible for running all validation checks and signing off before deliverables are submitted. This report documents the validation process.
 
-**QA Team Member:** [Name]
-**Date Completed:** [Date]
+**QA Team Member:** [Franklin Bradley]
+**Date Completed:** [10/27]
 
 ---
 
@@ -18,9 +18,9 @@ QA is responsible for running all validation checks and signing off before deliv
 **Actual Result:**
 ```
 TODO: Paste the run status/link
-```
+```https://github.com/LincolnKoskela/INET-4031-LAB-01/actions
 
-**Status:** TODO: [ ] Pass [ ] Fail
+**Status:** TODO: [x ] Pass [ ] Fail
 
 **Notes:** If it failed, what did the run's error output show?
 
@@ -35,9 +35,12 @@ TODO: Paste the run status/link
 **Actual Result:**
 ```
 TODO: Paste or describe the rule's configuration
-```
+```Enable: "Require a pull request before merging"
+Enable: "Require status checks to pass before merging"
+Add the build-and-push status check
+Enable: "Require branches to be up to date before merging"
 
-**Status:** TODO: [ ] Pass [ ] Fail
+**Status:** TODO: [ x] Pass [ ] Fail
 
 **Notes:** Was anything missing from the rule?
 
@@ -52,9 +55,9 @@ TODO: Paste or describe the rule's configuration
 **Actual Result:**
 ```
 TODO: Paste the run status/link
-```
+```https://github.com/LincolnKoskela/INET-4031-LAB-01/actions
 
-**Status:** TODO: [ ] Pass [ ] Fail
+**Status:** TODO: [ x] Pass [ ] Fail
 
 **Notes:** If it failed, was the failure in the Trivy scan step or elsewhere?
 
@@ -70,8 +73,8 @@ TODO: Paste the run status/link
 ```
 TODO: Paste the full output of the check script
 ```
-
-**Status:** TODO: [ ] Pass [ ] Fail
+All checks passed
+**Status:** TODO: [ x] Pass [ ] Fail
 
 **Notes:** This script only checks what's verifiable from inside the container (workflow files exist, are valid YAML, have the right triggers). It cannot check CI passing on main, branch protection, or the scheduled workflow's own run history -- those three still need manual confirmation in the GitHub UI per Checks 1-3 above.
 
@@ -83,29 +86,29 @@ Review the criteria below for each part of this week's deliverables. For each cr
 
 ### Part 1: CI Pipeline for Docker Build and Push
 
-TODO: [ ] `.github/workflows/ci.yml` created and committed
-TODO: [ ] Workflow triggers on `push` to main, `pull_request` to main, and `workflow_dispatch`
-TODO: [ ] Logs in to `ghcr.io` using `GITHUB_TOKEN` (no personal access token needed)
-TODO: [ ] Image tagged via `docker/metadata-action` (sha, branch ref, and `latest` on main)
-TODO: [ ] Push step conditional on not being a `pull_request` event (PRs build but don't push)
-TODO: [ ] First workflow run after push completed successfully
+TODO: [x ] `.github/workflows/ci.yml` created and committed
+TODO: [ x] Workflow triggers on `push` to main, `pull_request` to main, and `workflow_dispatch`
+TODO: [ x] Logs in to `ghcr.io` using `GITHUB_TOKEN` (no personal access token needed)
+TODO: [ x] Image tagged via `docker/metadata-action` (sha, branch ref, and `latest` on main)
+TODO: [ x] Push step conditional on not being a `pull_request` event (PRs build but don't push)
+TODO: [ x] First workflow run after push completed successfully
 
 ### Part 2: Workflow Secrets and Branch Protection
 
-TODO: [ ] `SLACK_WEBHOOK_URL` secret created under Settings > Secrets and variables > Actions
-TODO: [ ] Branch protection rule added on `main` requiring the `build-and-push` status check
-TODO: [ ] "Require branches to be up to date before merging" enabled
-TODO: [ ] `test/failing-build` branch created with an intentional Dockerfile syntax error
-TODO: [ ] PR from `test/failing-build` showed the merge button disabled while CI failed (screenshot captured)
-TODO: [ ] Dockerfile fixed, CI re-ran and passed, PR merged, test branch deleted (screenshot captured)
+TODO: [ x] `SLACK_WEBHOOK_URL` secret created under Settings > Secrets and variables > Actions
+TODO: [ x] Branch protection rule added on `main` requiring the `build-and-push` status check
+TODO: [ x] "Require branches to be up to date before merging" enabled
+TODO: [ x] `test/failing-build` branch created with an intentional Dockerfile syntax error
+TODO: [ x] PR from `test/failing-build` showed the merge button disabled while CI failed (screenshot captured)
+TODO: [ x] Dockerfile fixed, CI re-ran and passed, PR merged, test branch deleted (screenshot captured)
 
 ### Part 3: Scheduled Maintenance Workflow
 
-TODO: [ ] `.github/workflows/scheduled-maintenance.yml` created and committed
-TODO: [ ] Cron trigger set to `0 8 * * 1` (08:00 UTC every Monday), plus `workflow_dispatch` for manual runs
-TODO: [ ] Job has `permissions: packages: read` and logs in to `ghcr.io` before scanning (the image is a private package -- Trivy needs credentials, not just a valid reference)
-TODO: [ ] Image reference is lowercased before being passed to Trivy (`${{ github.repository }}` includes the org name as-cased on GitHub, which breaks reference parsing if it contains uppercase letters)
-TODO: [ ] Manually triggered run completed successfully (screenshot captured)
+TODO: [ x] `.github/workflows/scheduled-maintenance.yml` created and committed
+TODO: [ x] Cron trigger set to `0 8 * * 1` (08:00 UTC every Monday), plus `workflow_dispatch` for manual runs
+TODO: [ x] Job has `permissions: packages: read` and logs in to `ghcr.io` before scanning (the image is a private package -- Trivy needs credentials, not just a valid reference)
+TODO: [ x] Image reference is lowercased before being passed to Trivy (`${{ github.repository }}` includes the org name as-cased on GitHub, which breaks reference parsing if it contains uppercase letters)
+TODO: [ x] Manually triggered run completed successfully (screenshot captured)
 
 ---
 
@@ -113,30 +116,30 @@ TODO: [ ] Manually triggered run completed successfully (screenshot captured)
 
 ### Required Files
 
-TODO: [ ] `.github/workflows/ci.yml` is committed (build and push, manual trigger)
-TODO: [ ] `.github/workflows/scheduled-maintenance.yml` is committed
-TODO: [ ] `scripts/check-week6.sh` is present and runs clean
+TODO: [ x] `.github/workflows/ci.yml` is committed (build and push, manual trigger)
+TODO: [ x] `.github/workflows/scheduled-maintenance.yml` is committed
+TODO: [ x] `scripts/check-week6.sh` is present and runs clean
 
 ### GitHub Repository
 
-TODO: [ ] Branch protection rule configured on `main`
-TODO: [ ] `test/failing-build` branch deleted after merge
-TODO: [ ] All changes pushed to the main branch
+TODO: [ x] Branch protection rule configured on `main`
+TODO: [ x] `test/failing-build` branch deleted after merge
+TODO: [ x] All changes pushed to the main branch
 
 ### Google Doc
 
-TODO: [ ] Screenshot of failed CI blocking a merge is attached
-TODO: [ ] Screenshot of passing CI after the fix is attached
-TODO: [ ] Screenshot of the Scheduled Maintenance workflow run showing success is attached
-TODO: [ ] Screenshot of `./scripts/check-week6.sh` passing is attached
-TODO: [ ] Discussion answers recorded (CI trigger tradeoffs, secret masking limitations, branch protection bypass governance, cron vs. systemd timers)
-TODO: [ ] Week 6 storage check values recorded (`df -h`, `docker system df`)
+TODO: [ x] Screenshot of failed CI blocking a merge is attached
+TODO: [ x] Screenshot of passing CI after the fix is attached
+TODO: [ x] Screenshot of the Scheduled Maintenance workflow run showing success is attached
+TODO: [ x] Screenshot of `./scripts/check-week6.sh` passing is attached
+TODO: [ x] Discussion answers recorded (CI trigger tradeoffs, secret masking limitations, branch protection bypass governance, cron vs. systemd timers)
+TODO: [ x] Week 6 storage check values recorded (`df -h`, `docker system df`)
 
 ---
 
 ## Summary
 
-**Overall Status:** [ ] ALL CHECKS PASS [ ] SOME CHECKS FAIL
+**Overall Status:** [x ] ALL CHECKS PASS [ ] SOME CHECKS FAIL
 
 **Blockers:** [List any blockers that prevent submission]
 
@@ -146,7 +149,7 @@ TODO: [ ] Week 6 storage check values recorded (`df -h`, `docker system df`)
 
 By signing below, QA certifies that all required validation checks have been executed and all deliverables meet the acceptance criteria.
 
-**QA Signature:** _________________    **Date:** __________
+**QA Signature:** ___Franklin B._____________    **Date:** __10/27________
 
 ---
 

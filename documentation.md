@@ -96,5 +96,125 @@ chmod +x ./scripts/check-week1.sh
 same machine where it's invoked. We also created ansible playbook that automates installing linux packages, ansible, and docker.
 
 
-### Lab 2 
+## Lab 2 - Building the 3 tier stack application
+
+This lab we will be containerizing and operating the three tier stack application. 
+We will be using the services of nginx, python flask API, and PostgreSQL database. 
+We will be writing the Docker compose configurations that wire the three services together, 
+handles start up ordering, data persistence, and manage credentials. We are also extending 
+the ansible playbook to include the application stack, moving us closer to automation. 
+
+### Walkthrough
+
+**Part One: Defining the service**
+
+`docker-compose.yml` is where the three services are being defines. The location is inside the week-2/ folder
+right outside the app folder. This is because docker-comppose.yml is managing how the app runs and recieves traffic.
+
+Created `docker-compose.yml`
+
+Pasted postgreSQL into docker-comppose
+
+Pasted Flask into docker-comppose
+
+Created `week/2 nginx.conf`
+
+Pasted code into nginx.conf so the reverse proxy knows where to send its traffic
+
+Pasted nginx into docker-comppose
+
+Organize the services in the order they depend on one another.
+- Start-up: PostgreSQL → Flask → Nginx
+Incoming HTTP traffic: User → Nginx → Flask → PostgreSQL (when database access is needed)
+
+**Networking and Persistence**
+
+Added network and volume to bottom of docker-compose to create persistence and networking.
+- network creates private network so the services can communicate on their own private network
+- volume creates place to store data so it doesn't disappear when containers are removed
+
+cp .env file and inside change port # to 8084
+
+Start the stack application from week-2
+`docker compose up -d`
+
+Check status of the containers
+`docker compose ps`
+
+Tested data persistence 
+- Created test incident command response
+
+Restart PostgreSQL Containers 
+`docker compose restart db`
+
+Start back up
+
+Containers are on the VM. Check by running `docker compose ps`. The three containers on the VM are `nginx, flask, and PostgreSQL`.
+Docker compose tells the Docker how to create and run those environments. The three containers talk through 
+`app-network` (docker network).
+
+**Environment configuration and Ansible**
+
+Add `app-stack` to `ansible/site.yml`
+
+Create directory
+`ansible/roles/app-stack/tasks`
+```
+touch main.yml
+```
+
+We're creating a folder called app-stack that holds instructions for Ansible to automatically start our application.
+Why? Instead of manually starting everything each time, we're adding these steps to Ansible so it can eventually rebuild our application setup for us.
+Think of it this way: Docker Compose starts the containers. Ansible automates the process of starting Docker Compose.
+
+Next we connect app-stack to the ansible playbook
+
+**Basically, we're telling Ansible: After setting up the Linux environment and Docker, run our app-stack instructions to start PostgreSQL, Flask, and Nginx.**
+
+We're combining our server setup and application startup into one automated process, making it easier to rebuild everything later.
+
+Pasted inside ansible playbook
+```
+- name: Deploy application stack
+  hosts: localhost
+  connection: local
+  become: yes
+
+  roles:
+    - app-stack
+```
+
+
+### Key words
+
+- Reverse Proxy: an intermediary; routes all incoming traffic request to their correct destination. 
+- API: Application Programming Interface: a set of rules and protocols that allows different software applications to 
+communicate and exchange data with each other.
+- .yml file: a human-readable data serialization format. Commonly used for software config files.
+
+- PostgreSQL Database: the database. Stores incident records. Must finish initializing before Flask can connect.
+- Nginx: the API. Reads and writes incidents. Must be healthy before Nginx routes traffic to it.
+- Flask: the reverse proxy. Handles incoming requests and forwards them to Flask. Comes up last.
+
+
+### Summary
+
+In lab 1 we laid the foundation for the ansible playbook, told ansible where to run it's automations and
+gave it the playbook to tell ansible what automations to do. It ensures the baseline environment is configured. 
+In lab 2 we expanded on our project by first defining the three tier stack application services: nginx, flask, and postgreSQL. 
+These definitions went inside the `docker-compose.yml` file. Then we added network and volume features to the `docker-compose.yml`. 
+This enables the containers to talk to each other on their own private network while also provided volume is keeping the database records
+safe. Lastly, we expanded ansible by making a folder called `app-stack` that will hold instructions to automatically start our application.
+We're adding steps to ansible so eventually it can rebuild our application setup for us. Then we connect the `app-stack` to the playbook 
+in `site.yml`.
+
+### Validate
+
+```
+chmod +x scripts/check-week2.sh
+./scripts/check-week2.sh
+```
+
+
+### Troubleshooting / Problems and Errors
 

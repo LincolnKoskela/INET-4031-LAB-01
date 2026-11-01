@@ -83,6 +83,12 @@ Lastly, we updated our Ansible playbook for future automation of k3d cluster set
 - Cluster: group of computers (nodes) that work together as one system.
 
 
+## System Architecture
+![IncidentCommand Architecture](images/appArchitecture.png)
+![kubernetes](images/kubernetes.png)
+![workflow](images/workflow.png)
+
+
 
 ## Team Members
 

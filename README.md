@@ -55,6 +55,34 @@ chmod +x scripts/check-week2.sh
 No issues in this lab. Validation checks clean.
 
 
+## Lab 3 - Container Orchestration with k3d
+
+In this lab, we are moving incident tracking application from Docker Compose to Kubernetes.
+Why? Becuase Kubernetes can manage application containers more effectively as they continue to grow. 
+Our application doesn't necessarily need Kubernetes, but this is how companies manage in large 
+production environments. 
+
+Transitioning from Docker Compose to Kubernetes for container management, we first started by creating k3d clusters. 
+k3d is a tool that creates and manages Kubernetes clusters. Then we converted Docker Compose configurations into 
+Kubernetes manifest using a tool called Kompose. After that, we deployed our application. This means we made 
+our application run in an environment where users can access it. This involved giving Kubernetes YAML manifest. 
+Kubernetes creating pods to run containers. Exposing the application so users can access it through a web browser. 
+
+We went from having application code and configuration files to having a working application running inside Kubernetes.
+
+Lastly, we updated our Ansible playbook for future automation of k3d cluster setups. 
+
+
+
+### Key words
+- Docker Compose: Runs your application's containers using a Compose configuration.
+- k3d: Creates a local Kubernetes cluster on your VM.
+- Kompose: Converts your Docker Compose configuration into Kubernetes manifests (YAML files).
+- Kubernetes: Takes over managing your application's containers.
+- Ansible: Automates setting up k3d so you can repeat the process.
+- Cluster: group of computers (nodes) that work together as one system.
+
+
 
 ## Team Members
 

@@ -33,10 +33,21 @@ resource "kubernetes_deployment" "flask" {
       }
 
       spec {
+        service_account_name = "flask-app"
         container {
           name              = "flask"
           image             = "week-2-flask:latest"
           image_pull_policy = "IfNotPresent"
+        security_context {
+          allow_privilege_escalation = false
+          read_only_root_filesystem = true
+          run_as_non_root = true
+          run_as_user = 1000
+
+          capabilities {
+            drop = ["ALL"]
+          }
+        }
 
           env_from {
             secret_ref {

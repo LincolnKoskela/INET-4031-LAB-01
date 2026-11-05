@@ -103,6 +103,7 @@ Lastly, we updated our Ansible playbook for future automation of k3d cluster set
 
 ## Links
 - [TEAM Charter](TEAM_CHARTER.md)
+- [Github Project](https://github.com/users/LincolnKoskela/projects/3)
 
 ## Google Docs
 

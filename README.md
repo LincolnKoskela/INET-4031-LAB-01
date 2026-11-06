@@ -1,6 +1,6 @@
 # INET-4031 TEAM 4 (The Technologist Masters)
 
-### Link to our Project Sprint Board
+### Project Sprint Board
 - [Github Project](https://github.com/users/LincolnKoskela/projects/3)
 
 

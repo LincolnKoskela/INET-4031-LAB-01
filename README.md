@@ -1,6 +1,9 @@
 # INET-4031 TEAM 4 (The Technologist Masters)
 
-**Objective:** Establish our development environment and create an Ansible playbook to automate the installation of essential tools and Docker.
+### Link to our Project Sprint Board
+- [Github Project](https://github.com/users/LincolnKoskela/projects/3)
+
+
 
 ### Environment
 

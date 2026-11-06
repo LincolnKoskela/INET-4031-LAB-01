@@ -116,7 +116,8 @@ Lastly, we updated our Ansible playbook for future automation of k3d cluster set
 | Sprint 2 | Week 4 | [Sprint 2](https://docs.google.com/document/d/1X3Cch7b5BpypOXtlK-KE6l3pMkvsO5NedIFNNhzOf1s/edit?tab=t.0) | Lab 4 | 
 | Sprint 3 | Week 5 | [Sprint 3](https://docs.google.com/document/d/1T7WB-vNLd0U6nvW2LPKlDWJchTMlT8eMmWoQWH7TV2E/edit?tab=t.0#heading=h.os0x1xy1p7cg)| Lab 5 | 
 | Sprint 3 | Week 6 | [Sprint 3](https://docs.google.com/document/d/15DZgE2GE_X--YhF7GgfKfQlP69AeAfDqPXCMvig_A5o/edit?tab=t.0)| Lab 6 | 
-| Sprint 4 | Week 7 | [Sprint 3](https://docs.google.com/document/d/14RIXpQIhEpLZlmqdWa7Cgoe7aNiOFlgJlE6BGDXg2gQ/edit?tab=t.0#heading=h.5krs08qd5ud9)| Lab 7 | 
+| Sprint 4 | Week 7 | [Sprint 4](https://docs.google.com/document/d/14RIXpQIhEpLZlmqdWa7Cgoe7aNiOFlgJlE6BGDXg2gQ/edit?tab=t.0#heading=h.5krs08qd5ud9)| Lab 7 | 
+| Sprint 4 | Week 8 | [Sprint 4](https://docs.google.com/document/d/1CogcPh87iZO-TxHJpWODKy0XHAYlg9g3YzIMFPQrhAY/edit?tab=t.0)| Lab 8 | 
 
 
 

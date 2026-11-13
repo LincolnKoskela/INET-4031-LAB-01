@@ -22,7 +22,6 @@ services:
   flask:
     build:
       context: ./app
-      network: host
     expose:
       - "5000"
     environment:
